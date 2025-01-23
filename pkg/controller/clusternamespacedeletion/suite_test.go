@@ -56,6 +56,7 @@ var _ = ginkgo.BeforeSuite(func() {
 			filepath.Join("../../../", "test", "e2e", "resources", "assisted-service"),
 			filepath.Join("../../../", "test", "e2e", "resources", "hypershift"),
 			filepath.Join("../../../", "test", "e2e", "resources", "ocm"),
+			filepath.Join("../../../", "test", "e2e", "resources", "capi"),
 		},
 	}
 

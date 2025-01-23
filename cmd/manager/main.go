@@ -12,6 +12,7 @@ import (
 	"flag"
 	"fmt"
 	"os"
+	capiv1beta1 "sigs.k8s.io/cluster-api/api/v1beta1"
 	"strconv"
 	"time"
 
@@ -90,6 +91,7 @@ func init() {
 	utilruntime.Must(addonv1alpha1.AddToScheme(scheme))
 	utilruntime.Must(klusterletconfigv1alpha1.AddToScheme(scheme))
 	utilruntime.Must(hyperv1beta1.AddToScheme(scheme))
+	utilruntime.Must(capiv1beta1.AddToScheme(scheme))
 }
 
 func main() {
